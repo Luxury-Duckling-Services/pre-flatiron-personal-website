@@ -15,7 +15,7 @@ document.querySelector("body").appendChild(h21);
 
 const h22 = document.createElement("h2");
 
-h22.textContent = `The striker moves faster than the goalkeeper.`
+h22.textContent = `The striker moves faster than the goalkeeper. Use the range slider below to adjust striker's shooting power.`
 document.querySelector("body").appendChild(h22);
 
 const h3 = document.createElement("h3");
@@ -24,5 +24,5 @@ let score = 0;
 let miss = 0;
 let block = 0;
 
-h3.textContent = `The striker has scored ${score} times and missed ${miss} times, while the goalkeeper have made ${block} saves.`;
+h3.textContent = `The striker has scored ${score} times and missed ${miss} times, while the goalkeeper has made ${block} saves.`;
 document.querySelector("body").appendChild(h3);

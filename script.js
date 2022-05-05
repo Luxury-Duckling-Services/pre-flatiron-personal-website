@@ -23,7 +23,23 @@ function moveKeeperRight() {
     }
 }
 
-const action = setInterval(moveBallUp, 6);
+/* Range Slider Source Code: https://www.w3schools.com/howto/howto_js_rangeslider.asp */
+
+const powerRange = document.getElementById("powerRange");
+const power = document.getElementById("power");
+power.innerHTML = powerRange.value;
+
+let timeInt = 7 - powerRange.value;
+let action = setInterval(moveBallUp, timeInt);
+
+powerRange.oninput = function() {
+    power.innerHTML = this.value;
+    timeInt = 7 - this.value;
+    clearInterval(action);
+    action = setInterval(moveBallUp, timeInt);
+}
+
+/* Range Slider Source Code: https://www.w3schools.com/howto/howto_js_rangeslider.asp */
 
 document.addEventListener("keydown", function (e) {
     if (e.key === 'x' && gameOn === false) {
