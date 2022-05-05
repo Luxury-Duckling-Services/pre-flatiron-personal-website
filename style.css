@@ -1,3 +1,42 @@
 body {
-    background: blue;
-  }
+    background: grey;
+}
+
+#goal {
+    background-color: white;
+    height: 20px;
+    position: absolute;
+    width: 100px;
+}
+
+#striker {
+    background-color: blue;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+}
+
+#keeper {
+    background-color: red;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+}
+
+#ball {
+    background-color: gold;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+}
+  
+#field {
+    background-color: green;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 250px;
+}
