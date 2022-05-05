@@ -10,7 +10,7 @@ function moveKeeperLeft() {
     const keeperLeft = parseInt(keeperLeftNumbers, 10);
 
     if (keeperLeft > 0) {
-      keeper.style.left = `${keeperLeft - 2}px`;
+      keeper.style.left = `${keeperLeft - 1}px`;
     }
 }
 
@@ -19,7 +19,7 @@ function moveKeeperRight() {
     const keeperLeft = parseInt(keeperLeftNumbers, 10);
 
     if (keeperLeft < 230) {
-      keeper.style.left = `${keeperLeft + 2}px`;
+      keeper.style.left = `${keeperLeft + 1}px`;
     }
 }
 
